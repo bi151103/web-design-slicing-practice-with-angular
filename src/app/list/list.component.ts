@@ -41,11 +41,11 @@ import { SvgIconComponent } from 'angular-svg-icon';
           <ul>
             @for (acc of accountsList; track acc.appName) {
               <li
-                class="hover:bg-[#eaebff] hover:cursor-pointer p-[15px] h-[100px] "
+                class="hover:bg-[#eaebff] hover:cursor-pointer p-[15px] h-[100px] rounded-[16px]"
               >
                 <a
                   [href]="acc.appSite"
-                  class="flex items-center rounded-[16px] h-full w-full"
+                  class="flex items-center  h-full w-full"
                   target="_blank"
                 >
                   <img
