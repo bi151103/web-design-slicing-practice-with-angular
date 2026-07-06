@@ -4,9 +4,11 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: ` <router-outlet></router-outlet> `,
+  host: {
+    class: 'bg-primary-bg block h-screen w-screen',
+  },
 })
 export class AppComponent {
-  title = 'web-design-slicing-practice-with-angular';
+  title = 'Web Design Slicing Practice with Angular 19';
 }
