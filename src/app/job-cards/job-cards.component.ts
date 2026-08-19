@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-job-cards',
   template: `
     <ng-container>
-      <div class="w-[70%] max-h-[70%] p-[30px] text-center">
+      <div
+        class="w-[70%] max-h-[70%] p-[30px] text-center min-h-[300px] overflow-auto"
+      >
         <h1 class="text-3xl font-bold py-[30px]">Open positions</h1>
         <ul class="flex gap-[15px] flex-wrap py-[30px]">
           @for (position of positionList; track position.name) {
